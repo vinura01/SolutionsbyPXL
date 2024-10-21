@@ -1,0 +1,495 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #fff; /* White text */
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #1f1f1f; /* Slightly darker header */
+}
+
+.logo img {
+    height: 50px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.menu ul li {
+    margin-left: 20px;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu ul li a:hover {
+    color: #00d1b2; /* Accent color for hover effect */
+}
+
+/* Flexbox Layout for home Section */
+.home {
+    display: flex;
+    justify-content: space-between; /* Aligns content on left and image on right */
+    align-items: center;
+    padding: 100px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+    min-height: 80vh;
+    text-align: center;
+}
+
+/* Left Content (Text, Buttons) */
+.home-content {
+    flex: 1.5;
+}
+
+.home-content h1 {
+    font-size: 3em;
+    color: #00d1b2;;
+}
+
+.home-content h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+}
+.home-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.home-content .btn {
+    background-color: #00d1b2;
+    color: #121212;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.home-content .btn:hover {
+    background-color: #00a896;
+}
+
+/* Right Image */
+.home-image {
+    flex: 1;
+    text-align: right;
+}
+
+.home-image img {
+    max-width: 90%;
+    border-radius: 10px;
+    margin-right: 40px; /* Shift image to the left by 100px */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-content, .home-image {
+        flex: unset;
+        width: 100%;
+    }
+
+    .home-image {
+        text-align: center;
+    }
+
+    .home-image img {
+        width: 80%;
+        margin: 20px auto;
+        margin-right: 0; /* Reset margin on small screens */
+    }
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('../images/11.png') no-repeat center center;
+    background-size: cover;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #00d1b2; /* Accent color */
+}
+
+.hero p {
+    font-size: 24px;
+    color: #fff;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #00d1b2;
+    color: #121212;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: #00a896;
+}
+/* Services Section */
+.services {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #1e1e1e;
+    padding: 30px;
+    margin: 15px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+ .service-card h3 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+        /* Portfolio Section */
+        .portfolio {
+            padding: 60px 20px;
+            background-color: #181818;
+            text-align: center;
+        }
+
+        .portfolio h2 {
+            margin-bottom: 40px;
+            font-size: 2.5em;
+        }
+
+        .portfolio-items {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .portfolio-item {
+            margin: 15px;
+        }
+
+        .portfolio-item img {
+            max-width: 40%;
+            border-radius: 10px;
+        
+        }
+
+        .portfolio-item h3 {
+            margin-top: 15px;
+        }
+
+/* Albums and Video Grid */
+.albums-grid, .video-grid {
+    padding: 40px;
+    text-align: center;
+}
+
+.album-row, .video-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.album, .video {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.album img, .video img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.album h3, .video h3 {
+    color: #00d1b2;
+    margin-bottom: 10px;
+}
+
+.album a, .video a {
+    color: #00d1b2;
+    text-decoration: none;
+}
+
+.album a:hover, .video a:hover {
+    color: #00a896;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 60px;
+    text-align: center;
+}
+
+.about-us h1 {
+    font-size: 36px;
+    color: #00d1b2;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Footer Styling */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #1f1f1f;
+}
+
+footer .social a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer .social a img {
+    width: 30px;
+    height: 30px;
+}
+
+.social a:hover {
+    transform: scale(1.2); /* Grows the icon */
+    filter: invert(0) sepia(1) hue-rotate(190deg) saturate(500%); /* Adds a color hue effect */
+}
+
+footer p {
+    color: #888;
+}
+ /* CTA Section */
+ .cta {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cta h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.cta .btn {
+    background-color: #00d1b2;
+    color: #121212;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta .btn:hover {
+    background-color: #00a896;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .album-row, .video-row {
+        flex-direction: column;
+    }
+    
+    .album, .video {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+    
+    .menu ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+}
+/* Contact Page Styling */
+.contact {
+    padding: 60px;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 36px;
+    color: #00d1b2;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.contact-info .info {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.contact-info .info h3 {
+    color: #00d1b2;
+    margin-bottom: 10px;
+}
+
+.contact-info .info p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info .info p a:hover {
+    color: #00a896;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: #00d1b2;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #121212;
+    border: 1px solid #00d1b2;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: #00a896;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #00d1b2;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #00a896;
+}
+/* Scroll-to-top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    padding: 10px 20px;
+    font-size: 24px;
+    background-color: #00d1b2;
+    color: #121212;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    z-index: 1000;
+}
+
+.scroll-to-top.visible {
+    display: block; /* Shown when the user scrolls down */
+}
+
+.scroll-to-top:hover {
+    background-color: #00a896;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.menu ul.active {
+    display: block;
+}
+
+/* Mobile Menu Style for Small Screens */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu ul.active {
+        display: flex;
+    }
+
+    .menu ul li {
+        margin-bottom: 15px;
+    }
+}
